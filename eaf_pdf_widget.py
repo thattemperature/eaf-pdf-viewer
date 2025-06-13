@@ -427,7 +427,7 @@ class PdfViewerWidget(QWidget):
     @interactive
     def jump_to_previous_saved_pos(self):
         if self.saved_pos_index < 0:
-            message_to_emacs("No more previous saved postition.")
+            message_to_emacs("No more previous saved position.")
         else:
             if self.saved_pos_index + 1 == len(self.saved_pos_sequence):
                 self.saved_pos_sequence.append(self.scroll_offset)
